@@ -1,0 +1,371 @@
+body{background-color:  black}
+
+*{
+    margin: 0;
+    padding: 0;
+    }
+    .main{
+        width:100%;
+        background-color: black;  
+        background-position: center; 
+        background-size: cover;
+        height: 180vh;
+    }
+    .navbar{
+        width:1200px;
+        height:75px;
+        margin:auto;
+    }
+    .icon{
+        width:200px;
+        float:left;
+        height:70px;
+    }
+    .logo{
+        color: #fbff00;
+        font-size:35px;
+        font-family:Arial;
+        padding-left:20px;
+        float:left;
+        padding-top:10px;
+    }
+    .menu{
+    width: 400px;
+    float:left;
+    height:70px;
+    }
+   ul{
+        float:left;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+  ul li{
+        list-style:none;
+        margin-left:62px;
+        margin-top:27px;
+        font-size: 14px;
+    }
+     ul li a{
+        text-decoration:none;
+        color:#fff ;
+        font-family:Arial;
+        font-weight:bold;
+        transition:0.4s ease-in-out;
+    }
+   ul li::after{
+content: '';
+width:0%;
+height:2px;
+background: #fbff00;
+display:block;
+margin: auto;
+transition: 0.5s;
+    }
+    ul li:hover::after{
+width:100%;
+    }
+    ul li a:hover{
+        color: #fbff00;
+    }
+    .pages
+    {
+        display:none;
+    }
+ul li:hover .pages
+    {
+    display:block;
+    position: absolute;
+    margin-top:-10px;
+    margin-left:-60px;
+    }
+    ul li:hover .pages ul
+    {
+        display:block;
+        margin:5px;
+    }
+    ul li:hover .pages ul li
+{
+    width:50px;
+    padding:0px;
+    border-bottom:1px dotted #fff;
+    background:transparent;
+    border-radius:0;
+    text-align:left;
+}
+ul li:hover .pages ul li:last-child
+{
+    border-bottom:none;
+}
+ul li:hover .pages ul li a:hover
+{
+    color:#fbff00;
+}
+
+    .search{
+        width:330px;
+        float:left;
+        margin-left:270px;
+    }
+    .srch{
+        font-family: 'Times New Roman';
+        width: 200px;
+        height: 40px;
+        background: transparent;
+        border:1px solid #fbff00;
+        margin-top:13px;
+        color: rgb(255, 255, 255);
+        border-right:none;
+        font-size:20px;
+        float:left;
+        padding:10px;
+        border-bottom-left-radius: 15px;
+        border-top-left-radius:15px;
+    }
+    .btn{
+        width:100px;
+        height: 40px;
+        background: #fbff00;
+        border:2px solid #fbff00;
+        margin-top:13px;
+        color : rgb(0, 0, 0);
+        font-size:15px;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+    .btn:focus{
+        outline:none;
+    }
+    .srch:focus{
+        outline: none;
+    }
+    button{
+        color:#ffffff;
+        font-size:medium;
+        padding: 10px 25px;
+        background: transparent;
+        background-color: #000000;
+        border: 1px solid #fbfcfd;
+        border-radius: 20px;
+        outline: none;
+        cursor:pointer;
+        transition: 0.4s ease;
+    }
+button:hover{
+    background-color: #fbff00;
+    color: #000000;
+    transform: scale(1.1);
+}
+#m18{ color: #fbff00;
+text-shadow: 1px 1px  white;
+font-size:50px;
+margin-bottom: 15px;
+margin-top: 30px;
+font-family: Brush Script MT,Lucida Handwriting,Cursive;
+text-decoration: none;
+}
+
+ 
+}
+#m50{color:  #ffd966;
+text-shadow: 1px 1px  white;
+font-size:40px;}
+
+
+  
+
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+ border-collapse:collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd ;
+  padding: 8px;
+color: #04AA6D;
+}
+
+#customers tr:nth-child(even){background-color:#f2f2f2; }
+ 
+#customers tr:hover   {background-color:#ddd  ;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+ color: white;
+}
+
+#m19{
+   font-style: italic;
+   color:white;
+  font-size:20px;
+ text-decoration: none;
+}
+
+
+#m14 { color:  #fbff00;
+text-shadow: 3px 3px  white;
+font-family:"lucida handuyiting",cursive;
+font-size:50px;
+border: 1px solid black;
+  
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px; 
+ }
+#photo:hover {
+  transform: scaleX(-1);
+}
+p#m7{color:white;
+ font-size:30px;
+font-family: Arial, Helvetica, sans-serif;
+border-style:  double;
+ border-color:  #ffd966;
+border-style:  double;
+ border-color:  #ffd966;
+  }
+body {margin:25px;
+margin-top:25;}
+
+ol {
+  background: #04AA6D ;
+  padding: 20px;
+}
+ol li {
+  background: #c7f0e1 ;
+  color:black;
+  padding: 5px;
+  margin-left: 35px;
+}
+.grid{
+display: grid;
+margin-top: 40px;
+grid-template-columns: 400px 400px;
+grid-template-rows: 400px;
+row-gap:80px;
+column-gap: 260px;
+height: 480;
+width:860;
+margin-left: 140px;
+}
+.grid .ho1 {
+height: 400;
+width:400;
+box-shadow: 15px 15px 15px  white;
+transition-duration: -2s;
+transition-timing-function: linear;
+}
+.grid .ho2 {
+height: 400;
+width:400;
+box-shadow: 15px 15px 15px  white;
+transition-duration: -2s;
+transition-timing-function: linear;
+}
+.ho1{
+transition-duration:0.5s;
+transition-timing-function:
+linear;
+position:relative;
+animation:shadow 10s
+infinite;
+animation-timing-function:linear;
+animation-delay:2s;}
+@keyframes shadow{
+0%{
+content:url(eloon.jpg);
+height: 400 px;
+width:400 px;
+}
+25%{
+content:url(pay.jpg );
+height: 400px;
+width: 400px;
+}
+50%{
+content:url(elooon.jpg );
+height: 400 px;
+width: 400px;
+}
+75%{
+content:url(twitter.jpg );
+height: 400px;
+width: 400px;
+}
+}
+#line{
+color:   #aaa9ad;
+margin-top: 30px;}
+
+ .button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #04AA6D;
+  border: none;
+  color: #c7f0e1;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+ 
+
+
+
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+ .flex-container {
+  display: flex;
+ background-color:  white;
+ border-color: aqua; 
+border-style: outset ;
+            border-color: rgb(173, 173, 173);
+   
+}
+
+.flex-container > div {
+  background-color:  black;
+  width:  100px;
+  margin:  10px;
+  text-align: center;
+  line-height:  auto;
+  font-size: 70px;
+ 
+ }
+ .play{
+margin-top: 50px;
+margin-left: 100px;
+
+}
+ 
+ 

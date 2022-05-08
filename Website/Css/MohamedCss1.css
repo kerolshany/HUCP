@@ -1,0 +1,521 @@
+body{
+    background-color:rgb(0, 0, 0);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+@font-face {
+    src: url(font/adventpro-light.ttf);
+    font-family: advent;
+ }
+ @font-face {
+    src: url(font/FjallaOne-Regular.ttf);
+    font-family: FjallaOne;
+ }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    }
+    .main{
+        width:100%;
+        background-image: linear-gradient(to top,rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+        background-position: center; 
+        background-size: cover;
+        height: 180vh;
+        background-color:black;
+    }
+    .navbar{
+        width:1200px;
+        height:75px;
+        margin:auto;
+    }
+    .icon{
+        width:200px;
+        float:left;
+        height:70px;
+    }
+    .logo{
+        color: #fbff00;
+        font-size:35px;
+        font-family:Arial;
+        padding-left:20px;
+        float:left;
+        padding-top:10px;
+    }
+    .menu{
+    width: 400px;
+    float:left;
+    height:70px;
+    }
+    ul{
+        float:left;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    ul li{
+        list-style:none;
+        margin-left:62px;
+        margin-top:27px;
+        font-size: 14px;
+    }
+    ul li a{
+        text-decoration:none;
+        color: #fff;
+        font-family:Arial;
+        font-weight:bold;
+        transition:0.4s ease-in-out;
+    }
+    ul li::after{
+content: '';
+width:0%;
+height:2px;
+background: #fbff00;
+display:block;
+margin: auto;
+transition: 0.5s;
+    }
+    ul li:hover::after{
+width:100%;
+    }
+    ul li a:hover{
+        color: #fbff00;
+    }
+    .pages
+    {
+        display:none;
+    }
+ul li:hover .pages
+    {
+    display:block;
+    position: absolute;
+    margin-top:2px;
+    margin-left:-62px;
+    }
+    ul li:hover .pages ul
+    {
+        display:block;
+        margin:10px;
+    }
+    ul li:hover .pages ul li
+{
+    width:50px;
+    padding:10px;
+    border-bottom:1px dotted #fff;
+    background:transparent;
+    border-radius:0;
+    text-align:left;
+}
+ul li:hover .pages ul li:last-child
+{
+    border-bottom:none;
+}
+ul li:hover .pages ul li a:hover
+{
+    color:#fbff00;
+}
+
+    .search{
+        width:330px;
+        float:left;
+        margin-left:270px;
+    }
+    .srch{
+        font-family: 'Times New Roman';
+        width: 200px;
+        height: 40px;
+        background: transparent;
+        border:1px solid #fbff00;
+        margin-top:13px;
+        color: rgb(255, 255, 255);
+        border-right:none;
+        font-size:20px;
+        float:left;
+        padding:10px;
+        border-bottom-left-radius: 15px;
+        border-top-left-radius:15px;
+    }
+    .btn{
+        width:100px;
+        height: 40px;
+        background: #fbff00;
+        border:2px solid #fbff00;
+        margin-top:13px;
+        color : rgb(0, 0, 0);
+        font-size:15px;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+    .btn:focus{
+        outline:none;
+    }
+    .srch:focus{
+        outline: none;
+    }
+    button{
+        color:#fbfcfd;
+        padding: 10px 25px;
+        background: transparent;
+        border: 1px solid #fff;
+        border-radius: 20px;
+        outline: none;
+        cursor:pointer;
+        transition: 0.7;
+    }
+button:hover{
+    background-color: #fbff00;
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+.cover_intro{
+    width: 100%;
+    height: 65%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.719),rgba(0, 0, 0, 0.821)),url(../media/Study-Computer-Science.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+   
+}
+
+
+
+
+
+
+
+.cover_text{
+    animation:forwards 1;
+    animation-name:covertext;
+    animation-duration:4s;
+    animation-delay: 500ms;
+}
+
+.cover_text{
+     
+    top:60%;
+    left:51%;
+    position: absolute;
+    color: rgba(0, 0, 0, 0);
+    font-family:FjallaOne;
+    font-size: 50px;
+    }
+
+
+
+@keyframes covertext{
+    0%{
+        color: rgba(0, 0, 0, 0.118);
+        left:40% 
+    }
+    100%{
+        color:rgb(137, 148, 166);
+        
+    }
+
+}
+
+
+
+
+
+.head{
+    font-family:fjallaOne;
+    font-size:50px;
+    color: rgb(152, 150, 215);
+    padding: 15px 0px 5px 3px;
+    
+}
+
+.head{
+    animation:forwards 1;
+    animation-name: move;
+    animation-duration: 4s;
+    animation-delay: 4s;
+}
+@keyframes move{
+    0% {
+        margin-left:3px;
+        font-size:50px;
+        font-family:FjallaOne;
+    color: rgba(140, 171, 210, 0.796);
+    }
+   
+    
+
+    40% {
+        color: rgba(140, 171, 215, 0.856);
+    }
+    
+
+
+    100%{
+        color: rgb(140, 171, 255);
+    margin-left:80px;
+    }
+}
+.line
+{   
+    background-color:rgba(79, 79, 47, 0.358);
+    height: 5px;
+    width: 87%;
+    margin: 3px 0px 40px 10px;
+    border-radius: 80%;
+}
+
+
+
+
+.intro_para{
+    color: #7f98a5;
+    font-family:advent;
+    text-align:center;
+    size:100%;
+    font-size:26px;
+    word-spacing:6px;
+    line-height:38px;
+    font-weight:bold;
+}
+
+
+
+.intro_para{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.896),rgba(15, 16, 16, 0.821)),url(../media/codewallpaper.jpg);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-blend-mode:darken;
+    background-size:  1500px;
+   }
+
+.block_one {
+    position: relative;
+    width: 100%;
+    
+}
+
+.block_two{
+    position: relative;
+    padding:30px;
+}
+
+.block_two .images{
+    display:flex;
+    padding: 25px;
+    margin: 10px;
+}
+
+.block_two .images .image_c1 img{
+    height:90%;
+    width:80%;
+   object-fit: cover;
+   transition: .3s linear;
+   border:4px solid rgb(154, 159, 180);
+   margin: 3px;
+   align-items: flex-end;
+   box-shadow: 0 10px 100px rgba(74, 82, 109, 0.378);
+}
+
+.block_two .images .image_c1:hover img{
+    transform:scale(1.1);
+    box-shadow: 0 10px 70px rgba(73, 87, 134, 0.634);
+}
+ 
+.w_c1{
+    display:inline-flex;
+    margin: 10px;
+    color: #7f98a5;
+    font-size:45px;
+    font-family:FjallaOne;
+}
+
+
+.w_c2{
+    color:#6a8696;
+    font-size:40px;
+    font-family:advent;
+    margin:10px;
+    display:flex;
+
+    
+}
+
+.block_three,.block_four,.block_five,.block_six,.block_seven,.block_nine{
+    justify-content:center;
+    align-items:center;
+    display: flex;
+    margin:15px;
+    position: relative;
+    
+}
+.image_c2{
+    margin:35px;
+    align-items:flex; 
+    
+
+}
+
+.image_c2 img{ 
+    display: block;
+
+}
+
+.image_uptext{
+    color: #878a96b5;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:5px;
+}
+
+
+.image_cb1 img{
+    height:70%;
+    width:60%;
+    margin:45px;
+    box-shadow: 0 5px 50px #7f98a5;
+    transition: 1.5s;
+}
+
+.image_cb1 img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 5px 50px rgb(152, 150, 215);
+}
+
+
+.cb_text1{
+  color: #6a8696;
+  font-family:advent;
+  font-size:35px;
+  margin:50px;
+}
+
+
+.viewimage:visited{
+    color:rgb(77, 83, 133)
+}
+
+.cb_text2{
+    color: #6a8696;
+    font-family:advent;
+    font-size:25px;
+    margin:40px;
+    margin-top:90px;
+}
+
+.block_four1{
+    margin:40px;
+}
+
+.block_five{
+    max-height:600px;
+}
+
+.image_al img{
+    border: 5px solid #878a96b5;
+    background-image:url(../media/Frame.png);
+    height:100%;
+    width:100%;
+    max-width:300px;
+    max-height:500px;
+    position: relative;
+    transition: .8s;
+    margin:45px;
+}
+.ada{
+    top:230px;
+}
+.frame{
+    top:-250px;
+}
+.frame:hover{
+    opacity:0;
+    
+    
+}
+
+.al_text1{
+    color:#607b8a;
+    margin:50px;
+    font-size:30px;
+    font-family:FjallaOne;
+    
+}
+
+.al_text2{
+    color:#607b8ac5;
+    font-family:advent;
+    font-size:30px;
+    margin:40px;
+}
+
+
+.lv_text{
+    color: #607b8a;
+   font-family:  advent;
+   font-size:25px;
+   text-align-last: center;
+   margin:20px;
+}
+
+.leo img{
+    margin:5px;
+    height:60%;
+    width:200px;
+    padding:2px ;
+    border: 1px solid #778c9f;
+}
+
+.van img{
+    padding:2px;
+    margin:5px;
+    border: 1px solid #778c9f;
+    height:220px;
+    width:320px;
+    
+}
+
+
+.block_eight{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.419),rgba(0, 0, 0, 0.821)),url(../media/Code_Breaker1.jpg);
+    min-width:920px;
+    min-height:700px;
+    justify-content: space-around;
+    position:relative;
+}
+
+
+
+.alan{
+    color:#628395;
+    font-size:43px;
+    font-weight: 120;
+    font-family:FjallaOne;
+    margin:100px;
+    text-align:start;
+    position:absolute;
+    top:40px;
+}
+
+.alan_1{
+    font-size:35px;
+    color: #6a8696;
+}
+
+.block_nine{
+    margin:40px;
+}
+.at_text{
+    color:#628395;
+    margin:30px;
+    font-family:advent;
+    font-size:30px;
+}
+.vid{
+    margin:15px;
+
+}
