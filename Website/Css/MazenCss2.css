@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
 *{
     margin: 0;
     padding: 0;
@@ -171,6 +172,7 @@ button:hover{
 }
 .banner
 {
+    display: flex;
     width:100px;
     height: 100vh;
     background-size:cover;
@@ -182,6 +184,7 @@ button:hover{
 }
 .banner-clip-path
 {
+    display: flex;
     position: absolute;
     width: 100%;
     height: 120vh;
@@ -266,3 +269,167 @@ button:hover{
     margin-left: 60px;
     background:#ffffff;
 }
+.sec2
+{
+    width:100px;
+    height: 100vh;
+    background-size:cover;
+    background-position: center;
+    padding: 100px 30%;
+    margin-left:650px;
+    z-index: -2;
+
+}
+.sec2-clip-path
+{
+    position: absolute;
+    width: 100%;
+    height: 120vh;
+    background-color: rgb(185, 8, 8);
+    clip-path: polygon(0 0,90% 0, 65% 100%, 0 100%);
+    background-size: 600px;
+    background-position:2% 30%;
+    background-repeat: no-repeat;
+    margin-left: -1250px;
+    margin-top: -100px;
+    z-index: -1;
+}
+.salah
+{
+    position:relative;
+    width: 800px;
+    margin-top: -757px;
+    left: 72%;
+    transform: translate(-50%,-50%);
+    height: 100vh;
+    z-index: -1;
+}
+.salah img
+{
+    width:100%
+}
+.text 
+{
+    position:absolute;
+    top:50%;
+    left:50%;
+    font-size:50px;
+    padding: 0;
+}
+.sec3
+{
+    width:100px;
+    height: 100vh;
+    background-size:cover;
+    background-position: center;
+    padding:100px 30%;
+    margin-left:650px;
+    z-index: -2;
+
+}
+.sec3-clip-path
+{
+    position: absolute;
+    width: 100%;
+    height: 120vh;
+    background-color: rgb(185, 8, 8);
+    clip-path: polygon(0 0,90% 0, 65% 100%, 0 100%);
+    background-size: 600px;
+    background-position:2% 30%;
+    background-repeat: no-repeat;
+    margin-left: -1250px;
+    margin-top: -312px;
+    z-index: -1;
+}
+.mane
+{
+    position:absolute;
+    width: 750px;
+    margin-top: -980px;
+    left: 72%;
+    transform: translate(-50%,-50%);
+    height: 100vh;
+    z-index: -1;
+}
+.mane img
+{
+    width:100%
+}
+.sec4
+{ 
+     width:100px;
+    height: 100vh;
+    background-size:cover;
+    background-position: center;
+    padding: 100px 30%;
+    margin-left:650px;
+    z-index: -2;
+
+}
+.sec4-clip-path
+{
+    position: absolute;
+    width: 100%;
+    height: 120vh;
+    background-color: rgb(185, 8, 8);
+    clip-path: polygon(0 0,90% 0, 65% 100%, 0 100%);
+    background-size: 600px;
+    background-position:2% 30%;
+    background-repeat: no-repeat;
+    margin-left: -1250px;
+    margin-top: -312px;
+    z-index: -1;
+}
+.van
+{
+    position:absolute;
+    width: 800px;
+    margin-top: -910px;
+    left: 72%;
+    transform: translate(-50%,-50%);
+    height: 100vh;
+    z-index: -1;
+}
+.van img
+{
+    width:100%
+}
+.text3
+{
+    position:absolute;
+    top:9%;
+    left:53%;
+    font-size:50px;
+    padding: 0;
+}
+.content {
+    color: #ffffff; 
+    font-size: 55px;
+    font-family: 'Comfortaa', cursive;
+    text-shadow: -.030em .030em rgb(255, 255, 255),   -.08em .08em black; 
+    margin: -210px 0px 30px 0px;
+    margin-left: -1200px;
+    width: 900px;
+    text-align: center;
+  }
+  .content1 {
+    color: #ffffff; 
+    font-size: 65px;
+    font-family: 'Comfortaa', cursive;
+    text-shadow: -.030em .030em rgb(255, 255, 255),   -.08em .08em black; 
+    margin: 60px 0px 0px 0px;
+    margin-left: 40px;
+    width: 900px;
+    text-align: center;
+  }
+  .content2 {
+    color: #ffffff; 
+    font-size: 65px;
+    font-family: 'Comfortaa', cursive;
+    text-shadow: -.030em .030em rgb(255, 255, 255),   -.08em .08em black; 
+    margin: 80px 0px 0px 0px;
+    margin-left: 40px;
+    width: 900px;
+    text-align: center;
+  }
+  
